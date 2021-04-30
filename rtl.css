@@ -1,0 +1,38 @@
+.rtl{
+    direction: rtl;
+}
+
+#site-wrapper{
+    padding-left: inherit;
+}
+
+@media (min-width: 1440px) {
+    #site-wrapper {
+        padding-right: 44.5rem;
+    }
+}
+
+@media ( min-width: 1000px ) {
+    #site-wrapper {
+        padding-right: 33.33%;
+    }
+    #site-header {
+        right: 0;
+        left: inherit;
+    }
+
+    #site-content {
+        padding: 6rem 0 0 6rem;
+    }
+}
+
+@media ( min-width: 1200px ) {
+    #site-wrapper {
+        padding-right: 30.9%;;
+    }
+}
+
+.post-meta .meta-icon {
+    margin-left: .7rem;
+    margin-right: inherit;
+}
