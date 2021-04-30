@@ -1,21 +1,92 @@
-.rtl{
+@font-face {
+    font-family: sahel;
+    src: url("assets/font/Sahel-Black.eot");
+    src: url("assets/font/Sahel-Black?#iefix") format("embedded-opentype"),
+        url("assets/font/Sahel-Black.woff") format("woff"),
+        url("assets/font/Sahel-Black.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: estedad;
+    src: url("assets/font/Estedad-Thin.woff2") format("woff2"),
+        url("fassets/font/Estedad-Thin.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: estedad;
+    src: url("assets/font/Estedad-Bold.woff2") format("woff2"),
+        url("assets/font/Estedad-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+body {
+    font-family: 'estedad', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+button{
+    font-family: 'estedad', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: sahel;
+    font-weight: bold;
+}
+
+.rtl {
     direction: rtl;
 }
 
-#site-wrapper{
+.nav-toggle .bars {
+    left: 0;
+    right: inherit;
+}
+
+.post-meta .meta-icon {
+    margin-left: .7rem;
+    margin-right: inherit;
+}
+
+blockquote {
+    border-color: #DCDFE2;
+    border-style: solid;
+    border-width: 0 .5rem 0 0;
+    padding: .25em 1em;
+    color: #000;
+}
+
+#site-wrapper {
     padding-left: inherit;
+}
+
+.search-overlay label img {
+    margin-right: inherit;
+    margin-left: 1.2rem;
 }
 
 @media (min-width: 1440px) {
     #site-wrapper {
         padding-right: 44.5rem;
     }
+
+    .search-overlay.active {
+        left: 0;
+        right: 40.5rem;
+        ;
+    }
 }
 
-@media ( min-width: 1000px ) {
+@media (min-width: 1000px) {
     #site-wrapper {
         padding-right: 33.33%;
     }
+
     #site-header {
         right: 0;
         left: inherit;
@@ -24,15 +95,37 @@
     #site-content {
         padding: 6rem 0 0 6rem;
     }
-}
 
-@media ( min-width: 1200px ) {
-    #site-wrapper {
-        padding-right: 30.9%;;
+    .search-overlay.active {
+        left: 0;
+        right: calc(33.33% - 4rem);
     }
 }
 
-.post-meta .meta-icon {
-    margin-left: .7rem;
-    margin-right: inherit;
+@media (min-width: 1200px) {
+    #site-wrapper {
+        padding-right: 30.9%;
+        ;
+    }
+
+    .search-overlay.active {
+        left: 0;
+        right: calc(30.9% - 4rem);
+    }
+}
+
+@media (min-width: 375px) {
+
+    .search-overlay label img {
+        margin-right: inherit;
+        margin-left: 2rem;
+    }
+
+}
+
+@media ( min-width: 600px ) {
+    .search-overlay label img {
+        margin-right: inherit;
+        margin-left: 2.5rem;
+    }
 }
