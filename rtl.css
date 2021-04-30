@@ -25,7 +25,7 @@ body {
     font-family: 'estedad', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-button{
+button {
     font-family: 'estedad', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 
@@ -68,6 +68,12 @@ blockquote {
 .search-overlay label img {
     margin-right: inherit;
     margin-left: 1.2rem;
+}
+
+.pagination-single .arrow {
+    margin-left: 1.5rem;
+    margin-right: inherit;
+    transform: rotate(180deg);
 }
 
 @media (min-width: 1440px) {
@@ -123,9 +129,18 @@ blockquote {
 
 }
 
-@media ( min-width: 600px ) {
+@media (min-width: 600px) {
     .search-overlay label img {
         margin-right: inherit;
         margin-left: 2.5rem;
+    }
+
+    .pagination-single .arrow {
+        margin-left: 2rem;
+        margin-right: inherit;
+    }
+
+    .pagination-single .next-post .arrow {
+        margin: 0 2rem 0 0;
     }
 }
