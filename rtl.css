@@ -114,6 +114,10 @@ blockquote {
         ;
     }
 
+    .archive-header .subheading {
+        margin-bottom: 8.9rem;
+    }
+
     .search-overlay.active {
         left: 0;
         right: calc(30.9% - 4rem);
