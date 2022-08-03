@@ -148,3 +148,11 @@ blockquote {
         margin: 0 2rem 0 0;
     }
 }
+
+.preview-inner {
+    padding: 2rem 2rem .5rem 2rem;
+}
+
+.preview-title {
+    height: 50px;
+}
