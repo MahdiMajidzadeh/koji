@@ -406,8 +406,6 @@ koji.masonry = {
 					percentPosition: 	true,
 					stagger: 			0,
 					transitionDuration: 0,
-					isRTL: true,
-					originLeft: false
 				} );
 
 			} );
