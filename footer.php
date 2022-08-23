@@ -25,7 +25,9 @@
 				<?php endif; ?>
 
 				<p class="credits">
-					براساس قالبی از  <a href="https://www.andersnoren.se">Anders Norén</a>
+					<?php
+					/* Translators: $s = name of the theme developer */
+					printf( _x( 'Theme by %s', 'Translators: $s = name of the theme developer', 'koji' ), '<a href="https://andersnoren.se">' . __( 'Anders Norén', 'koji' ) . '</a>' ); ?>
 				</p><!-- .credits -->
 
 			</footer><!-- #site-footer -->
