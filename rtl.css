@@ -122,6 +122,10 @@ blockquote {
         left: 0;
         right: calc(30.9% - 4rem);
     }
+
+    .grid-sizer, .preview {
+        width: 33%;
+    }
 }
 
 @media (min-width: 375px) {
