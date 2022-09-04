@@ -30,8 +30,8 @@ $html_class = is_admin_bar_showing() ? ' showing-admin-bar' : ''; ?>
 
 			<header id="site-header" role="banner">
 
-				<a class="skip-link" href="#site-content"><?php _e( 'Skip to the content', 'koji' ); ?></a>
-				<a class="skip-link" href="#main-menu"><?php _e( 'Skip to the main menu', 'koji' ); ?></a>
+				<!-- <a class="skip-link" href="#site-content"><?php _e( 'Skip to the content', 'koji' ); ?></a>
+				<a class="skip-link" href="#main-menu"><?php _e( 'Skip to the main menu', 'koji' ); ?></a> -->
 
 				<div class="header-top section-inner">
 
